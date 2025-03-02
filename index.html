@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Ransomware Monitoring Dashboard</title>
+  <style>
+    /* Global Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #eef2f7; color: #333; }
+    
+    header { background: linear-gradient(135deg, #0d47a1, #1976d2); padding: 2rem; text-align: center; color: #fff; }
+    header h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.1rem; }
+    
+    /* Navigation Tabs in the Top Corner */
+    .nav-tabs {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+    }
+    .nav-tabs a {
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      margin-left: 0.5rem;
+      background: #1976d2;
+      color: #fff;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .nav-tabs a:hover {
+      background: #0d47a1;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 6rem auto 2rem;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+    .container h2 { margin-bottom: 1rem; font-size: 2rem; color: #0d47a1; }
+    .container p { line-height: 1.6; margin-bottom: 1rem; font-size: 1rem; }
+    footer { text-align: center; font-size: 0.9rem; color: #666; padding: 1rem 0; }
+  </style>
+</head>
+<body>
+  <!-- Navigation Tabs -->
+  <div class="nav-tabs">
+    <a href="live_tracking.html">Live Tracking</a>
+    <a href="system_data.html">System Data</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Advanced Ransomware Monitoring</h1>
+    <p>Real-time system tracking and early ransomware alert detection</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>About the Project</h2>
+    <p>This dashboard is part of an advanced monitoring system designed to continuously track system performance and activity. It leverages real-time data such as CPU, memory, disk usage, file events, and network activity to detect unusual behavior. Using anomaly detection techniques, the system can issue early warnings if potential ransomware activity is detected.</p>
+    <p>The project utilizes a REST API and WebSocket connection (hosted on <strong>127.0.0.1:8001</strong>) for live data updates and alert notifications. Explore the tabs above to view live tracking data or review detailed system information along with ransomware simulation tools.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Advanced Ransomware Monitoring Software
+  </footer>
+</body>
+</html>
